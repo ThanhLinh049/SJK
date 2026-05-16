@@ -1,10 +1,10 @@
 import identityImg from "@/assets/sjk-identity.jpg";
 
 const PROOF = [
-  ["10+", "năm kinh nghiệm"],
-  ["06", "công ty thành viên"],
-  ["OOH", "đa lĩnh vực"],
-  ["VN", "Vietnam — Asia"],
+  ["120+", "Màn hình LED toàn quốc"],
+  ["40+", "Tỉnh thành phủ sóng"],
+  ["11", "Công ty & dự án thành viên"],
+  ["100+", "Đối tác chiến lược"],
 ];
 
 export function Identity() {
@@ -23,9 +23,8 @@ export function Identity() {
             <span className="italic text-[var(--brand-red)]">thương hiệu</span>, vị trí và công nghệ.
           </h2>
           <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-[var(--charcoal)]/75">
-            SJK Group định hướng và kết nối các công ty thành viên trong một hệ sinh thái
-            truyền thông ngoài trời hiện đại — mỗi đơn vị giữ một vai trò riêng trong
-            chuỗi giá trị OOH.
+            Sở hữu mạng lưới điểm chạm bao phủ toàn quốc, kết hợp năng lực vận hành thực
+            chiến và nền tảng dữ liệu số.
           </p>
         </div>
 
