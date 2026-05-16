@@ -17,11 +17,11 @@ export function EcosystemDeck() {
             </span>
           </div>
           <h2 className="font-display text-[44px] font-light leading-[1.05] text-[var(--ink)] md:text-[56px]">
-            Sáu công ty thành viên, một hệ sinh thái{" "}
+            Mười một đơn vị thành viên, một hệ sinh thái{" "}
             <span className="italic text-[var(--brand-red)]">SJK Group</span>.
           </h2>
           <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-[var(--charcoal)]/75">
-            Mỗi công ty thành viên đảm nhiệm một mắt xích chuyên biệt trong chuỗi giá trị
+            Mỗi đơn vị thành viên đảm nhiệm một mắt xích chuyên biệt trong chuỗi giá trị
             truyền thông ngoài trời — vận hành dưới định hướng chung của tập đoàn.
           </p>
         </div>
@@ -51,14 +51,14 @@ export function EcosystemDeck() {
           </div>
 
           {/* Switcher */}
-          <div className="grid grid-cols-3 divide-x divide-[var(--border)] border-b border-[var(--border)] md:grid-cols-6">
+          <div className="grid grid-cols-3 border-b border-[var(--border)] md:grid-cols-4 lg:grid-cols-6">
             {MEMBERS.map((mem, i) => {
               const isActive = i === active;
               return (
                 <button
                   key={mem.id}
                   onClick={() => setActive(i)}
-                  className={`relative flex flex-col items-start gap-1 px-5 py-6 text-left transition ${
+                  className={`relative flex flex-col items-start gap-1 border-b border-r border-[var(--border)] px-5 py-5 text-left transition ${
                     isActive ? "bg-white" : "bg-[var(--warm-white)] hover:bg-white"
                   }`}
                 >
@@ -70,7 +70,7 @@ export function EcosystemDeck() {
                     {mem.index}
                   </span>
                   <span
-                    className={`font-display text-[19px] ${
+                    className={`font-display text-[17px] leading-tight ${
                       isActive ? "text-[var(--brand-red)]" : "text-[var(--ink)]"
                     }`}
                   >
@@ -136,7 +136,7 @@ export function EcosystemDeck() {
                   <span className="inline-block h-px w-8 bg-[var(--ink)] transition-all group-hover:w-12 group-hover:bg-[var(--brand-orange)]" />
                 </a>
                 <span className="font-display text-4xl text-[var(--charcoal)]/25">
-                  {m.index} <span className="text-base">/ 06</span>
+                  {m.index} <span className="text-base">/ 11</span>
                 </span>
               </div>
             </div>
