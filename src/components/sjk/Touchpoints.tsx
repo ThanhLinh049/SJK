@@ -61,7 +61,7 @@ export function Touchpoints() {
           </div>
 
           <h2 className="text-5xl leading-[1.1] text-[#050505] lg:text-7xl">
-            Bao phủ mọi điểm chạm{" "}
+            Bao phủ mọi điểm chạm
             <span className=" text-[#E3000F]">không gian</span>.
           </h2>
 

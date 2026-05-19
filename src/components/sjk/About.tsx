@@ -206,7 +206,7 @@ function AboutHero() {
           </div>
 
           <h1 className="text-[64px] font-medium leading-[0.95] tracking-tight md:text-[96px]">
-            Hệ sinh thái truyền thông{" "}
+            Hệ sinh thái truyền thông
             <span className="text-[var(--brand-red)]">
               đô thị
             </span>

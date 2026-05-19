@@ -42,7 +42,7 @@ function MembersHero() {
           </div>
 
           <h1 className="text-[64px] font-medium leading-[0.95] tracking-tight md:text-[96px]">
-            Các công ty thành viên{" "}
+            Các công ty thành viên
             <span className="text-[var(--brand-red)]">
               SJK
             </span>

@@ -126,10 +126,10 @@ function BlogBanner() {
           </div>
 
           <h1 className="text-[64px] font-medium leading-[0.95] tracking-tight md:text-[96px]">
-            Góc nhìn về{" "}
+            Góc nhìn về
             <span className="text-[var(--brand-red)]">
               OOH
-            </span>{" "}
+            </span>
             và truyền thông đô thị.
           </h1>
 
