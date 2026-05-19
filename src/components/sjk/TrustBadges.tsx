@@ -47,7 +47,7 @@ export function TrustBadges() {
                 />
               </div>
 
-              {/* Vùng chứa Text hi*/}
+              {/* Vùng chứa Text*/}
               <div>
                 <p className="text-sm md:text-base text-[#050505] leading-tight">
                   {badge.title}
