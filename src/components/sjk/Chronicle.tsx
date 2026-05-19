@@ -68,7 +68,7 @@ export function Chronicle() {
             Hành trình kiến tạo
           </div>
           <h2 className="text-5xl leading-[1.1] text-[#050505] lg:text-7xl">
-            Tốc độ mở rộng và{" "}
+            Tốc độ mở rộng và <br />
             <span className="text-[#E3000F]">vị thế</span> dẫn đầu.
           </h2>
         </div>

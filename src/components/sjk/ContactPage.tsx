@@ -136,7 +136,7 @@ function ContactHero() {
             </span>
           </div>
 
-          <h1 className="text-[64px] font-light leading-[0.95] tracking-tight md:text-[96px]">
+          <h1 className="text-[64px] font-medium leading-[0.95] tracking-tight md:text-[96px]">
             Kết nối cùng{" "}
             <span className="text-[var(--brand-red)]">SJK Group</span>
           </h1>
