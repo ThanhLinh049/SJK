@@ -9,7 +9,7 @@ const MILESTONES = [
   { 
     year: "2019", 
     text: "Thành lập Liên doanh Việt - Nga Adjika ads, mở rộng năng lực sáng tạo công nghệ.",
-    img: "src/assets/history-1.jpg"
+    img: "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&q=80&w=800"
   },
   { 
     year: "2021", 
@@ -29,7 +29,7 @@ const MILESTONES = [
   { 
     year: "2024", 
     text: "Bước ngoặt thương hiệu: Hoàn thành đổi tên và ra mắt logo mới SJK Group (18/7/2024), đồng thời thành lập Inno X.",
-    img: "src/assets/sjk-oip.jpg"
+    img: "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&q=80&w=800"
   },
   { 
     year: "2025", 
