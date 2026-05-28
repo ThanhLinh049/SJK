@@ -26,33 +26,34 @@ const BADGES = [
 export function TrustBadges() {
   return (
     // Dải ngang màu trắng ngà, có viền mỏng ở dưới để phân cách nhẹ nhàng với section tiếp theo
-    <div className="bg-[#faf9f6] border-b border-[#050505]/10 py-10 overflow-hidden">
+    <div className="overflow-hidden border-b border-[var(--brand-black)]/10 bg-[var(--warm-white)] py-10">
       <div className="mx-auto max-w-[1320px] px-8">
         
         {/* Container dàn ngang các huy hiệu */}
-        <div className="flex flex-col md:flex-row flex-wrap items-center justify-between gap-10 md:gap-4">
+        <div className="flex flex-col flex-wrap items-center justify-between gap-10 md:flex-row md:gap-4">
           
           {BADGES.map((badge, idx) => (
             <div 
               key={idx} 
               // Hiệu ứng: Mặc định xám nhẹ, hover vào thì rõ nét và icon đổi sang màu cam thương hiệu
-              className="flex items-center gap-4 group cursor-default opacity-60 hover:opacity-100 transition-opacity duration-500"
+              className="group flex cursor-default items-center gap-4 opacity-60 transition-opacity duration-500 hover:opacity-100"
             >
               {/* Vùng chứa Hình ảnh / Icon */}
               <div className="flex-shrink-0">
                 {/* Thay thẻ <badge.icon> này bằng <img src="link-logo.png" className="h-10 w-auto" /> nếu có logo thật */}
                 <badge.icon 
-                  className="w-10 h-10 text-[#050505] group-hover:text-[var(--brand-orange)] transition-colors duration-500" 
+                  className="h-10 w-10 text-[var(--brand-black)] transition-colors duration-500 group-hover:text-[var(--brand-orange)]" 
                   strokeWidth={1} 
                 />
               </div>
 
               {/* Vùng chứa Text*/}
               <div>
-                <p className="text-sm md:text-base text-[#050505] leading-tight">
+                <p className="text-sm leading-tight text-[var(--brand-black)] md:text-base">
                   {badge.title}
                 </p>
-                <p className="text-[10px] uppercase tracking-[0.2em] text-[#050505]/60 mt-1 font-semibold">
+
+                <p className="mt-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-[var(--brand-black)]/60">
                   {badge.subtitle}
                 </p>
               </div>
