@@ -34,7 +34,7 @@ const MILESTONES = [
   { 
     year: "2025", 
     text: "Thành lập văn phòng tại Đà Nẵng, Cần Thơ. Ra mắt OIP (OOH Investment Partners) và kí kết hợp tác với Quà tặng doanh nghiệp OEM Group.",
-    img: "src/assets/sjk-airport.jpg"
+    img: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=800"
   },
 ];
 
