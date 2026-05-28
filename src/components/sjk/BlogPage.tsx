@@ -83,7 +83,7 @@ export function BlogPage() {
     <main className="bg-[#faf9f6] text-[#050505]">
 
       {/* HEADER TÁCH RIÊNG */}
-      <div className="relative z-30 bg-[#050505] text-white">
+      <div className="relative z-30 bg-[oklch(0.12_0.01_60)] text-white">
         <SiteHeader />
       </div>
 
@@ -102,12 +102,12 @@ export function BlogPage() {
 
 function BlogBanner() {
   return (
-    <section className="relative min-h-[calc(90vh-96px)] w-full overflow-hidden bg-[#050505] text-white">
+    <section className="relative min-h-[calc(90vh-96px)] w-full overflow-hidden bg-[oklch(0.12_0.01_60)] text-white">
 
       <img
         src={heroImg}
         alt="SJK Insights"
-        className="absolute inset-0 h-full w-full object-cover opacity-70"
+        className="absolute inset-0 h-full w-full object-cover opacity-65"
       />
 
       <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/55 to-black/10" />
@@ -118,7 +118,7 @@ function BlogBanner() {
         <div className="max-w-3xl">
 
           <div className="mb-6 flex items-center gap-3">
-            <span className="h-px w-10 bg-[var(--brand-red)]" />
+            <span className="h-px w-10 bg-[var(--brand-orange)]" />
 
             <span className="text-[11px] font-semibold uppercase tracking-[0.3em] text-white/85">
               Insights / Journal
@@ -126,16 +126,14 @@ function BlogBanner() {
           </div>
 
           <h1 className="text-[64px] font-medium leading-[0.95] tracking-tight md:text-[96px]">
-            Góc nhìn về
-            <span className="text-[var(--brand-red)]">
-              OOH
-            </span>
+            Góc nhìn về{" "}
+            <span className="text-[var(--brand-orange)]">OOH</span>{" "}
             và truyền thông đô thị.
           </h1>
 
-          <p className="mt-8 max-w-[720px] text-2xl font-light leading-snug text-white/88 md:text-[32px]">
+          <p className="mt-8 max-w-[720px] text-2xl font-light leading-snug text-white/90 md:text-[32px]">
             Xu hướng, dữ liệu, case study và góc nhìn chuyên sâu từ hệ sinh thái{" "}
-            <span className="text-[var(--brand-red)]">
+            <span className="text-[var(--brand-orange)]">
               SJK Group
             </span>.
           </p>
@@ -156,11 +154,10 @@ function BlogMenu() {
             <a
               key={item}
               href="#"
-              className={`shrink-0 text-[11px] font-semibold uppercase tracking-[0.22em] transition ${
-                index === 0
-                  ? "text-[var(--brand-red)]"
-                  : "text-[#050505]/55 hover:text-[var(--brand-red)]"
-              }`}
+              className={`shrink-0 text-[11px] font-semibold uppercase tracking-[0.22em] transition ${index === 0
+                  ? "text-[var(--brand-orange)]"
+                  : "text-[#050505]/55 hover:text-[var(--brand-orange)]"
+                }`}
             >
               {item}
             </a>
@@ -198,7 +195,7 @@ function FeaturedPost({
               Featured
             </SectionLabel>
 
-            <h2 className="text-[54px] font-light leading-[0.98] tracking-tight md:text-[48px]">
+            <h2 className="text-[54px] font-light leading-[0.98] tracking-tight md:text-[48px] hover:text-[var(--brand-orange)] transition">
               {post.title}
             </h2>
 
@@ -208,7 +205,7 @@ function FeaturedPost({
 
             <a
               href="#"
-              className="mt-8 inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-[#050505] transition hover:text-[var(--brand-red)]"
+              className="mt-8 inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-[#050505] transition hover:text-[var(--brand-orange)]"
             >
               Đọc bài viết
 
@@ -218,7 +215,7 @@ function FeaturedPost({
 
           <a
             href="#"
-            className="group relative h-[560px] overflow-hidden bg-[#050505] md:col-span-7"
+            className="group relative h-[560px] overflow-hidden bg-[oklch(0.12_0.01_60)] md:col-span-7"
           >
             <img
               src={post.image}
@@ -270,7 +267,7 @@ function BlogContent({
                 <a
                   key={topic}
                   href="#"
-                  className="rounded-full border border-[#050505]/10 px-4 py-2 text-[12px] text-[#050505]/65 transition hover:border-[var(--brand-red)] hover:text-[var(--brand-red)]"
+                  className="rounded-full border border-[#050505]/10 px-4 py-2 text-[12px] text-[#050505]/65 transition hover:border-[var(--brand-orange)] hover:text-[var(--brand-orange)]"
                 >
                   {topic}
                 </a>
@@ -304,7 +301,7 @@ function ArticleCard({
     <article className="group">
       <a href="#" className="block">
 
-        <div className="relative h-[300px] overflow-hidden bg-[#050505]">
+        <div className="relative h-[300px] overflow-hidden bg-[oklch(0.12_0.01_60)]">
 
           <img
             src={post.image}
@@ -315,11 +312,11 @@ function ArticleCard({
 
         <div className="border-b border-[#050505]/10 py-6">
 
-          <div className="text-[10px] font-semibold uppercase tracking-[0.25em] text-[var(--brand-red)]">
+          <div className="text-[10px] font-semibold uppercase tracking-[0.25em] text-[var(--brand-orange)]">
             {post.category} · {post.date}
           </div>
 
-          <h3 className="mt-4 text-[32px] font-light leading-[1.08] tracking-tight transition group-hover:text-[var(--brand-red)]">
+          <h3 className="mt-4 text-[32px] font-light leading-[1.08] tracking-tight transition group-hover:text-[var(--brand-orange)]">
             {post.title}
           </h3>
 
@@ -345,14 +342,13 @@ function SectionLabel({
   return (
     <div className="mb-6 flex items-center gap-3">
 
-      <span className="h-px w-10 bg-[var(--brand-red)]" />
+      <span className="h-px w-10 bg-[var(--brand-orange)]" />
 
       <span
-        className={`text-[11px] font-semibold uppercase tracking-[0.3em] ${
-          dark
+        className={`text-[11px] font-semibold uppercase tracking-[0.3em] ${dark
             ? "text-white/70"
             : "text-[#050505]/55"
-        }`}
+          }`}
       >
         {children}
       </span>
