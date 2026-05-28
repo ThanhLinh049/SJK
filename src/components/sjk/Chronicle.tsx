@@ -63,13 +63,14 @@ export function Chronicle() {
       <div className="mx-auto max-w-7xl px-6">
         
         <div className="max-w-3xl">
-          <div className="mb-8 flex items-center gap-4 text-[#E3000F] text-xs font-semibold uppercase tracking-[0.3em]">
-            <span className="h-px w-5 bg-[#E3000F]" />
+          <div className="mb-8 flex items-center gap-4 text-[var(--brand-orange)] text-xs font-semibold uppercase tracking-[0.3em]">
+            <span className="h-px w-5 bg-[var(--brand-orange)]" />
             Hành trình kiến tạo
           </div>
+
           <h2 className="text-5xl leading-[1.1] text-[#050505] lg:text-7xl">
             Tốc độ mở rộng và <br />
-            <span className="text-[#E3000F]">vị thế</span> dẫn đầu.
+            <span className="text-[var(--brand-orange)]">vị thế</span> dẫn đầu.
           </h2>
         </div>
         
@@ -119,9 +120,11 @@ export function Chronicle() {
                   active === i ? "opacity-100" : "opacity-30"
                 }`}
               >
-                <div className="text-3xl text-[#E3000F] mb-4">{m.year}</div>
+                <div className="text-3xl text-[var(--brand-orange)] mb-4">{m.year}</div>
+
                 {/* Giữ nguyên mb-6 trên desktop (md:mb-6), bỏ trên mobile */}
                 <div className="h-px w-full bg-[var(--charcoal)]/15 md:mb-6" />
+
                 {/* Áp dụng class của bạn cho mobile, và trả lại class cũ cho md: (desktop) */}
                 <p className="mt-5 md:mt-0 max-w-2xl text-[15px] md:text-2xl md:font-light leading-relaxed text-[var(--charcoal)]/75 md:text-[var(--charcoal)]/90">
                   {m.text}

@@ -35,14 +35,14 @@ export function TrustBadges() {
           {BADGES.map((badge, idx) => (
             <div 
               key={idx} 
-              // Hiệu ứng: Mặc định xám nhẹ (opacity), hover vào thì rõ nét và icon đổi màu đỏ
+              // Hiệu ứng: Mặc định xám nhẹ, hover vào thì rõ nét và icon đổi sang màu cam thương hiệu
               className="flex items-center gap-4 group cursor-default opacity-60 hover:opacity-100 transition-opacity duration-500"
             >
               {/* Vùng chứa Hình ảnh / Icon */}
               <div className="flex-shrink-0">
                 {/* Thay thẻ <badge.icon> này bằng <img src="link-logo.png" className="h-10 w-auto" /> nếu có logo thật */}
                 <badge.icon 
-                  className="w-10 h-10 text-[#050505] group-hover:text-[#E3000F] transition-colors duration-500" 
+                  className="w-10 h-10 text-[#050505] group-hover:text-[var(--brand-orange)] transition-colors duration-500" 
                   strokeWidth={1} 
                 />
               </div>

@@ -196,9 +196,8 @@ function AboutHero() {
 
       <div className="relative z-10 mx-auto flex min-h-[calc(90vh-120px)] max-w-[1400px] flex-col justify-end px-8 pb-20">
         <div className="max-w-3xl">
-          
           <div className="mb-6 flex items-center gap-3">
-            <span className="h-px w-10 bg-[var(--brand-red)]" />
+            <span className="h-px w-10 bg-[var(--brand-orange)]" />
 
             <span className="text-[11px] font-semibold uppercase tracking-[0.3em] text-white/85">
               Giới thiệu SJK Group
@@ -206,8 +205,8 @@ function AboutHero() {
           </div>
 
           <h1 className="text-[64px] font-medium leading-[0.95] tracking-tight md:text-[96px]">
-            Hệ sinh thái truyền thông
-            <span className="text-[var(--brand-red)]">
+            Hệ sinh thái truyền thông{" "}
+            <span className="text-[var(--brand-orange)]">
               đô thị
             </span>
           </h1>
@@ -216,7 +215,6 @@ function AboutHero() {
             Kết nối vị trí, công nghệ và dữ liệu để kiến tạo
             hạ tầng OOH thế hệ mới.
           </p>
-
         </div>
       </div>
     </section>
@@ -251,7 +249,7 @@ function AboutEssence() {
 
           <h2 className="max-w-[900px] text-4xl leading-[1.04] tracking-[-0.04em] md:text-6xl">
             SJK không chỉ khai thác quảng cáo ngoài trời. SJK xây dựng một{" "}
-            <span className="text-[#E3000F]">hệ sinh thái truyền thông</span> có dữ liệu.
+            <span className="text-[var(--brand-orange)]">hệ sinh thái truyền thông</span> có dữ liệu.
           </h2>
 
           <p className="mt-6 max-w-[680px] text-[16px] leading-[1.75] text-[#050505]/65">
@@ -263,8 +261,6 @@ function AboutEssence() {
     </section>
   );
 }
-
-<Touchpoints />
 
 function AboutOperatingModel() {
   return (
@@ -281,7 +277,7 @@ function AboutOperatingModel() {
           {OPERATING_MODEL.map((item, index) => (
             <div key={item.title} className="group bg-[#faf9f6] p-8 transition hover:bg-white">
               <div className="flex items-center justify-between">
-                <item.icon className="h-8 w-8 text-[#E3000F]" strokeWidth={1.4} />
+                <item.icon className="h-8 w-8 text-[var(--brand-orange)]" strokeWidth={1.4} />
                 <span className="text-[10px] font-semibold tracking-[0.28em] text-[#050505]/35">
                   0{index + 1}
                 </span>
@@ -295,7 +291,7 @@ function AboutOperatingModel() {
                 {item.desc}
               </p>
 
-              <div className="mt-9 h-px w-10 bg-[#E3000F] transition-all group-hover:w-20" />
+              <div className="mt-9 h-px w-10 bg-[var(--brand-orange)] transition-all group-hover:w-20" />
             </div>
           ))}
         </div>
@@ -330,7 +326,7 @@ function AboutEcosystemLogic() {
                 key={name}
                 className="group grid gap-6 border-b border-[#050505]/10 py-8 md:grid-cols-[90px_1fr]"
               >
-                <div className="text-3xl font-light text-[#E3000F]">
+                <div className="text-3xl font-light text-[var(--brand-orange)]">
                   0{index + 1}
                 </div>
 
@@ -339,10 +335,10 @@ function AboutEcosystemLogic() {
                     <h3 className="text-[32px] font-light leading-[1.1] tracking-[-0.03em]">
                       {name}
                     </h3>
-                    <ArrowUpRight className="mt-2 h-5 w-5 text-[#050505]/30 transition group-hover:text-[#E3000F]" />
+                    <ArrowUpRight className="mt-2 h-5 w-5 text-[#050505]/30 transition group-hover:text-[var(--brand-orange)]" />
                   </div>
 
-                  <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-[#E3000F]">
+                  <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-[var(--brand-orange)]">
                     {members}
                   </p>
 
@@ -388,7 +384,7 @@ function AboutChronicle() {
 
           <h2 className="text-5xl leading-[1.04] tracking-[-0.04em] text-[#050505] lg:text-7xl">
             Hành trình chuyển mình thành{" "}
-            <span className="text-[#E3000F]">hệ sinh thái</span> truyền thông.
+            <span className="text-[var(--brand-orange)]">hệ sinh thái</span> truyền thông.
           </h2>
         </div>
 
@@ -414,7 +410,7 @@ function AboutChronicle() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
 
                 <div className="absolute bottom-6 left-6 right-6">
-                  <div className="text-[10px] font-semibold uppercase tracking-[0.28em] text-[#E3000F]">
+                  <div className="text-[10px] font-semibold uppercase tracking-[0.28em] text-[var(--brand-orange)]">
                     {ERAS[active].label}
                   </div>
                   <div className="mt-3 text-7xl font-light leading-none text-white md:text-[90px]">
@@ -437,7 +433,7 @@ function AboutChronicle() {
                   active === i ? "opacity-100" : "opacity-30"
                 }`}
               >
-                <div className="text-3xl text-[#E3000F]">
+                <div className="text-3xl text-[var(--brand-orange)]">
                   {m.year}
                 </div>
 
@@ -472,7 +468,7 @@ function AboutLeadershipVision() {
 
           <h2 className="max-w-[900px] text-4xl leading-[1.04] tracking-[-0.04em] md:text-6xl">
             Tầm nhìn của SJK là trở thành lớp kết nối giữa{" "}
-            <span className="text-[#E3000F]">thương hiệu</span> và không gian đô thị.
+            <span className="text-[var(--brand-orange)]">thương hiệu</span> và không gian đô thị.
           </h2>
 
           <p className="mt-6 max-w-[680px] text-[16px] leading-[1.75] text-[#050505]/65">
@@ -502,7 +498,7 @@ function AboutLeadershipVision() {
                   className="flex items-center justify-between border-t border-white/15 py-4 first:border-t-0"
                 >
                   <div>
-                    <div className="text-[10px] font-semibold tracking-[0.25em] text-[#E3000F]">
+                    <div className="text-[10px] font-semibold tracking-[0.25em] text-[var(--brand-orange)]">
                       {num}
                     </div>
                     <div className="mt-1 text-[24px] font-light leading-[1.15] tracking-[-0.03em]">
@@ -535,7 +531,7 @@ function AboutTrustImpact() {
         <div className="grid gap-px bg-[#050505]/10 md:grid-cols-4">
           {TRUST_ITEMS.map(([title, subtitle], index) => (
             <div key={title} className="bg-[#faf9f6] p-8 transition hover:bg-white">
-              <div className="text-[10px] font-semibold tracking-[0.28em] text-[#E3000F]">
+              <div className="text-[10px] font-semibold tracking-[0.28em] text-[var(--brand-orange)]">
                 0{index + 1}
               </div>
               <h3 className="mt-10 text-[28px] font-light leading-[1.15] tracking-[-0.03em]">
@@ -561,7 +557,7 @@ function SectionLabel({
 }) {
   return (
     <div className="mb-5 flex items-center gap-3">
-      <span className="h-px w-8 bg-[#E3000F]" />
+      <span className="h-px w-8 bg-[var(--brand-orange)]" />
       <span
         className={`text-[11px] font-semibold uppercase tracking-[0.32em] ${
           dark ? "text-white/65" : "text-[#050505]/50"

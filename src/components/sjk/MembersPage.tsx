@@ -32,9 +32,8 @@ function MembersHero() {
 
       <div className="relative z-10 mx-auto flex min-h-[calc(90vh-120px)] max-w-[1400px] flex-col justify-end px-8 pb-20">
         <div className="max-w-3xl">
-
           <div className="mb-6 flex items-center gap-3">
-            <span className="h-px w-10 bg-[var(--brand-red)]" />
+            <span className="h-px w-10 bg-[var(--brand-orange)]" />
 
             <span className="text-[11px] font-semibold uppercase tracking-[0.3em] text-white/85">
               Hệ sinh thái thành viên
@@ -42,8 +41,8 @@ function MembersHero() {
           </div>
 
           <h1 className="text-[64px] font-medium leading-[0.95] tracking-tight md:text-[96px]">
-            Các công ty thành viên
-            <span className="text-[var(--brand-red)]">
+            Các công ty thành viên{" "}
+            <span className="text-[var(--brand-orange)]">
               SJK
             </span>
           </h1>
@@ -52,7 +51,6 @@ function MembersHero() {
             Mỗi đơn vị đảm nhiệm một lớp năng lực riêng,
             cùng kiến tạo hệ sinh thái truyền thông ngoài trời tích hợp.
           </p>
-
         </div>
       </div>
     </section>

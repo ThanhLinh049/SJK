@@ -26,13 +26,14 @@ export function SignatureAsset() {
             
             {/* CỤM BÊN TRÁI: Tiêu đề */}
             <div className="max-w-2xl text-white">
-              <div className="mb-6 flex items-center gap-4 text-[#E3000F] text-xs font-semibold uppercase tracking-[0.3em]">
-                <span className="h-px w-8 bg-[#E3000F]" />
+              <div className="mb-6 flex items-center gap-4 text-[var(--brand-orange)] text-xs font-semibold uppercase tracking-[0.3em]">
+                <span className="h-px w-8 bg-[var(--brand-orange)]" />
                 Biểu tượng đẳng cấp
               </div>
+
               <h2 className="text-4xl leading-[1.1] md:text-5xl lg:text-7xl">
                 Điểm nhìn trung tâm{" "}
-                <span className="text-[#E3000F]">tài chính</span> quốc tế.
+                <span className="text-[var(--brand-orange)]">tài chính</span> quốc tế.
               </h2>
             </div>
 

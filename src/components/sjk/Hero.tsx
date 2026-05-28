@@ -21,32 +21,38 @@ export function Hero() {
       <div className="relative z-10 mx-auto flex min-h-[calc(90vh-120px)] max-w-[1400px] flex-col justify-end px-8 pb-20">
         <div className="max-w-3xl">
           <div className="mb-6 flex items-center gap-3">
-            <span className="h-px w-10 bg-[var(--brand-red)]" />
+            <span className="h-px w-10 bg-[var(--brand-orange)]" />
             <span className="text-[11px] font-semibold uppercase tracking-[0.3em] text-white/85">
               Khởi tạo giá trị truyền thông ngoài trời
             </span>
           </div>
+
           <h1 className="text-[64px] font-medium leading-[0.95] tracking-tight md:text-[96px]">
-            SJK <span className=" text-[var(--brand-red)]">Group</span>
+            SJK <span className="text-[var(--brand-orange)]">Group</span>
           </h1>
+
           <p className="mt-6 text-2xl font-light leading-snug text-white/90 md:text-[32px]">
-            Tập đoàn quảng cáo ngoài trời <span className=" text-[var(--brand-red)]">tích hợp</span> hàng đầu
+            Tập đoàn quảng cáo ngoài trời{" "}
+            <span className="text-[var(--brand-orange)]">tích hợp</span> hàng đầu
           </p>
+
           <p className="mt-5 max-w-xl text-[14.5px] leading-relaxed text-white/85">
             Tiên phong ứng dụng công nghệ vào OOH, DOOH và hệ sinh thái truyền thông đa
             điểm chạm, mang lại hiệu quả đo lường minh bạch cho thương hiệu.
           </p>
+
           <div className="mt-9 flex flex-wrap items-center gap-3">
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 rounded-full bg-[var(--brand-red)] px-7 py-3.5 text-[12px] font-semibold uppercase tracking-[0.18em] text-white transition hover:brightness-110"
+              className="inline-flex items-center gap-2 rounded-full bg-[var(--brand-red)] px-7 py-3.5 text-[12px] font-semibold uppercase tracking-[0.18em] text-white transition hover:bg-[var(--brand-orange)]"
             >
               Liên hệ hợp tác
               <span aria-hidden>→</span>
             </a>
+
             <a
               href="#ecosystem"
-              className="inline-flex items-center gap-2 rounded-full border border-white/25 px-7 py-3.5 text-[12px] font-semibold uppercase tracking-[0.18em] text-white transition hover:bg-white/10"
+              className="inline-flex items-center gap-2 rounded-full border border-white/25 px-7 py-3.5 text-[12px] font-semibold uppercase tracking-[0.18em] text-white transition hover:border-[var(--brand-orange)] hover:bg-[var(--brand-orange)]/15 hover:text-white"
             >
               Khám phá hệ sinh thái
             </a>
@@ -77,7 +83,7 @@ export function Hero() {
                   className="flex shrink-0 items-center text-[12px] text-white/85"
                 >
                   <div className="flex items-center gap-2 transition hover:text-white">
-                    <span className="text-[10px] text-[var(--brand-red)]">
+                    <span className="text-[10px] text-[var(--brand-orange)]">
                       {m.index}
                     </span>
 

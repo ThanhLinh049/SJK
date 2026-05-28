@@ -13,11 +13,12 @@ export function PartnersNews() {
         {/* Partners */}
         <div className="max-w-3xl">
           <div className="mb-5 flex items-center gap-3">
-            <span className="h-px w-8 bg-[var(--brand-red)]" />
+            <span className="h-px w-8 bg-[var(--brand-orange)]" />
             <span className="text-[11px] font-medium uppercase tracking-[0.3em] text-[var(--charcoal)]/60">
               Đối tác & thương hiệu
             </span>
           </div>
+
           <h2 className="text-[36px] leading-[1.1] text-[var(--ink)] md:text-[44px]">
             Đồng hành cùng hàng trăm thương hiệu hàng đầu.
           </h2>
@@ -36,26 +37,29 @@ export function PartnersNews() {
             {[...PARTNERS, ...PARTNERS].map((p, i) => (
               <span
                 key={`${p}-${i}`}
-                className="shrink-0 text-xl text-[var(--charcoal)]/65 transition hover:text-[var(--ink)] md:text-2xl"
+                className="shrink-0 text-xl text-[var(--charcoal)]/65 transition hover:text-[var(--brand-orange)] md:text-2xl"
               >
                 {p}
               </span>
             ))}
           </div>
         </div>
+
         <style>{`@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }`}</style>
 
         {/* News */}
         <div id="news" className="mt-20 max-w-3xl">
           <div className="mb-5 flex items-center gap-3">
-            <span className="h-px w-8 bg-[var(--brand-red)]" />
+            <span className="h-px w-8 bg-[var(--brand-orange)]" />
             <span className="text-[11px] font-medium uppercase tracking-[0.3em] text-[var(--charcoal)]/60">
               Thành tựu & dấu ấn
             </span>
           </div>
+
           <h2 className="text-[36px] leading-[1.1] text-[var(--ink)] md:text-[44px]">
             Thành tựu & dấu ấn truyền thông.
           </h2>
+
           <p className="mt-4 max-w-2xl text-[14px] leading-relaxed text-[var(--charcoal)]/75">
             Những cột mốc khẳng định vị thế và trách nhiệm cộng đồng của SJK Group.
           </p>
@@ -76,15 +80,18 @@ export function PartnersNews() {
                 Featured
               </div>
             </div>
-            <div className="mt-5 text-[10px] font-semibold uppercase tracking-[0.25em] text-[var(--brand-red)]">
+
+            <div className="mt-5 text-[10px] font-semibold uppercase tracking-[0.25em] text-[var(--brand-orange)]">
               Giải thưởng · 2024
             </div>
+
             <h3 className="mt-5 text-2xl font-light leading-snug text-[var(--ink)] md:text-[28px]">
               SJK Group tự hào nhận danh hiệu Doanh nghiệp tiêu biểu TP.HCM 2024.
             </h3>
+
             <a
               href="#"
-              className="mt-4 inline-flex items-center gap-2 text-[12px] font-semibold uppercase tracking-[0.2em] text-[var(--ink)]"
+              className="mt-4 inline-flex items-center gap-2 text-[12px] font-semibold uppercase tracking-[0.2em] text-[var(--ink)] transition hover:text-[var(--brand-orange)]"
             >
               Đọc bài viết
               <span aria-hidden>→</span>
@@ -99,22 +106,26 @@ export function PartnersNews() {
                 className="group flex items-start gap-6 border-t border-[var(--border)] py-6 last:border-b"
               >
                 <span className="text-xl text-[var(--charcoal)]/40">{n}</span>
+
                 <div className="flex-1">
-                  <div className="text-[10px] uppercase tracking-[0.25em] text-[var(--brand-red)]">
+                  <div className="text-[10px] uppercase tracking-[0.25em] text-[var(--brand-orange)]">
                     {tag}
                   </div>
-                  <div className="mt-2 text-xl font-light leading-snug text-[var(--ink)] transition group-hover:text-[var(--brand-red)]">
+
+                  <div className="mt-2 text-xl font-light leading-snug text-[var(--ink)] transition group-hover:text-[var(--brand-orange)]">
                     {title}
                   </div>
                 </div>
+
                 <span className="mt-1 text-[var(--charcoal)]/40 transition group-hover:translate-x-1 group-hover:text-[var(--brand-orange)]">
                   →
                 </span>
               </a>
             ))}
+
             <a
               href="#"
-              className="mt-6 inline-flex items-center gap-2 self-start text-[12px] font-semibold uppercase tracking-[0.2em] text-[var(--ink)]"
+              className="mt-6 inline-flex items-center gap-2 self-start text-[12px] font-semibold uppercase tracking-[0.2em] text-[var(--ink)] transition hover:text-[var(--brand-orange)]"
             >
               Xem tất cả tin tức <span aria-hidden>→</span>
             </a>

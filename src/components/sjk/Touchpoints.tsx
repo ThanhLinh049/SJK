@@ -55,14 +55,14 @@ export function Touchpoints() {
     <section className="border-t border-[var(--charcoal)]/10 bg-[#faf9f6] py-32">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-16 max-w-3xl">
-          <div className="mb-6 flex items-center gap-4 text-xs font-semibold uppercase tracking-[0.3em] text-[#E3000F]">
-            <span className="h-px w-5 bg-[#E3000F]" />
+          <div className="mb-6 flex items-center gap-4 text-xs font-semibold uppercase tracking-[0.3em] text-[var(--brand-orange)]">
+            <span className="h-px w-5 bg-[var(--brand-orange)]" />
             Hạ tầng truyền thông
           </div>
 
           <h2 className="text-5xl leading-[1.1] text-[#050505] lg:text-7xl">
-            Bao phủ mọi điểm chạm
-            <span className=" text-[#E3000F]">không gian</span>.
+            Bao phủ mọi điểm chạm{" "}
+            <span className="text-[var(--brand-orange)]">không gian</span>.
           </h2>
 
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-[#050505]/70">
@@ -88,7 +88,7 @@ export function Touchpoints() {
               />
 
               <div className="absolute inset-x-0 bottom-0 flex h-1/3 flex-col justify-end bg-gradient-to-t from-[#050505] via-[#050505]/80 to-transparent px-5 pb-4 drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)] md:px-6 md:pb-5">
-                <div className="w-fit text-[10px] font-bold uppercase tracking-[0.25em] text-[#E3000F]">
+                <div className="w-fit text-[10px] font-bold uppercase tracking-[0.25em] text-[var(--brand-orange)]">
                   {item.note}
                 </div>
 
