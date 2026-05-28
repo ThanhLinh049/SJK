@@ -31,7 +31,7 @@ export function SiteHeader() {
 
         <a
           href="/contact"
-          className="hidden rounded-full border border-white/30 bg-white/10 px-5 py-2.5 text-[12px] font-medium uppercase tracking-[0.18em] text-white backdrop-blur transition hover:border-[var(--brand-red)] hover:bg-[var(--brand-red)] md:inline-block"
+          className="hidden rounded-full border border-white/30 bg-white/10 px-5 py-2.5 text-[12px] font-medium uppercase tracking-[0.18em] text-white backdrop-blur transition hover:border-[var(--brand-orange)] hover:bg-[var(--brand-orange)]/15 hover:text-white] md:inline-block"
         >
           Liên hệ hợp tác
         </a>
