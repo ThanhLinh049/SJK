@@ -12,18 +12,20 @@ export function Hero() {
         width={1920}
         height={1080}
       />
+
       {/* Stronger left-side gradient for text readability */}
       <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/55 to-black/10" />
       <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-transparent to-black/85" />
 
       <SiteHeader />
+
       {/* Hero content */}
       <div className="relative z-10 mx-auto flex min-h-[calc(90vh-120px)] max-w-[1400px] flex-col justify-end px-8 pb-20">
         <div className="max-w-3xl">
           <div className="mb-6 flex items-center gap-3">
             <span className="h-px w-10 bg-[var(--brand-orange)]" />
             <span className="text-[11px] font-semibold uppercase tracking-[0.3em] text-white/85">
-              Khởi tạo giá trị truyền thông ngoài trời
+              Hệ sinh thái truyền thông quảng cáo tích hợp
             </span>
           </div>
 
@@ -33,12 +35,13 @@ export function Hero() {
 
           <p className="mt-6 text-2xl font-light leading-snug text-white/90 md:text-[32px]">
             Tập đoàn quảng cáo ngoài trời{" "}
-            <span className="text-[var(--brand-orange)]">tích hợp</span> hàng đầu
+            <span className="text-[var(--brand-orange)]">tích hợp</span> hàng đầu Việt Nam
           </p>
 
           <p className="mt-5 max-w-xl text-[14.5px] leading-relaxed text-white/85">
-            Tiên phong ứng dụng công nghệ vào OOH, DOOH và hệ sinh thái truyền thông đa
-            điểm chạm, mang lại hiệu quả đo lường minh bạch cho thương hiệu.
+            Tiền thân là Shojiki, SJK Group phát triển hệ sinh thái gồm 7 công ty
+            thành viên, cung cấp giải pháp OOH, DOOH, sự kiện, công nghệ quảng cáo,
+            merchandise và truyền thông đa điểm trên toàn quốc.
           </p>
 
           <div className="mt-9 flex flex-wrap items-center gap-3">
@@ -100,15 +103,15 @@ export function Hero() {
         </div>
 
         <style>{`
-    @keyframes memberMarquee {
-      from {
-        transform: translateX(0);
-      }
-      to {
-        transform: translateX(-50%);
-      }
-    }
-  `}</style>
+          @keyframes memberMarquee {
+            from {
+              transform: translateX(0);
+            }
+            to {
+              transform: translateX(-50%);
+            }
+          }
+        `}</style>
       </div>
     </section>
   );
